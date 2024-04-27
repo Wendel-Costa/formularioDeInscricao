@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F37820;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    
+}
+
+.conteudo{
+    margin: 2% 5%;
+    height: 90%;
+    width: 60%;
+    padding: 2% 5%;
+    border-radius: 15px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.conteudo__questionario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.conteudo__questionario__escrever{
+    height: 3rem;
+    border-radius: 5px;
+    border-width: 0.5;
+    border-color: #CACACA;
+    border-style: solid;
+    background-color: #FFFAF2;
+    padding-left: 3%;
+}
+
+.conteudo__questionario__situacao{
+    height: 3rem;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #CACACA;
+    border-style: solid;
+    background-color: #FFFAF2;
+    padding-left: 3%;
+}
+
+.conteudo__documentos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.conteudo__documentos__documento{
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.conteudo__documentos__documento__tipo{
+    box-sizing: border-box;
+}
+
+.conteudo__documentos__documento__enviar{
+    border-color: #CACACA;
+    border-style: solid;
+    border-width: 0.3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 3rem;
+}
+
+.conteudo__documentos__documento__enviar__texto{
+    width: 70%;
+    height: 90%;
+    padding: 5% 1%;
+    font-size: 13px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.conteudo__documentos__documento__enviar__botao{
+    border-color: #097E90;
+    border-style: solid;
+    color: #097E90;
+    margin: 2%;
+    border-radius: 5px;
+    padding: 2%;
+
+}
+
+.conteudo__saidas{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+.conteudo__saidas__cancelar{
+    background-color: white;
+    border-color: #FF9F76;
+    color: #FF9F76;
+    border-style: solid;
+    border-radius: 5px;
+    height: 3rem;
+    width: 13rem;
+}
+
+.conteudo__saidas__enviar{
+    background-color: #FF9F76;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: 13rem;
+}
+
+.imagem{
+    width: 40%;
+}
+
+.conteudo__saidas__cancelar:hover{
+    background-color: #FF9F76;
+    color: white;
+}
+
+.conteudo__saidas__enviar:hover{
+    background-color: #FF9F76;
+    color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+.conteudo__documentos__documento__enviar__botao:hover{
+    background-color: #097E90;
+    color: white
+}

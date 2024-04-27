@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
 </head>
+
 <body>
     <section class="conteudo">
         <h1>Formulário de inscrição</h1>
+        <section class="conteudo__questionario">
+            <input type="text" class="conteudo__questionario__escrever" placeholder="Nome Completo">
+            
+            <input type="text" class="conteudo__questionario__escrever" placeholder="CPF">
 
-        <p>Nome Completo</p>
-        <input type="text" class="conteudo__escrever">
+            <input type="text" class="conteudo__questionario__escrever" placeholder="E-mail">
 
-        <p>CPF</p>
-        <input type="text" class="conteudo__escrever">
+            <input type="text" class="conteudo__questionario__escrever" placeholder="Telefone">
 
-        <p>E-mail</p>
-        <input type="text" class="conteudo__escrever">
+            <input type="text" class="conteudo__questionario__escrever" placeholder="CEP">
 
-        <p>Telefone</p>
-        <input type="text" class="conteudo__escrever">
+            <select class="conteudo__questionario__situacao">
+                <option>Selecione</option>
+                <option>Só estuda</option>
+                <option>Só trabalha</option>
+                <option>Estuda e trabalha</option>
+                <option>Não estuda nem trabalha</option>
+            </select>
+        </section>
 
-        <p>CEP</p>
-        <input type="text" class="conteudo__escrever">
-
-        <p>Situação</p>
-        <select class="conteudo__situacao">
-            <option>Selecione</option>
-            <option>Só estuda</option>
-            <option>Só trabalha</option>
-            <option>Estuda e trabalha</option>
-            <option>Não estuda nem trabalha</option>
-        </select>
-
-        <section class="documentos">
-            <p>Documento de Identidade</p>
-            <p>Comprovante de Residência</p>
+        <section class="conteudo__documentos">
+            <div class="conteudo__documentos__documento">
+                <p class="conteudo__documentos__documento__tipo">Identidade</p>
+                <div class="conteudo__documentos__documento__enviar">
+                    <p class="conteudo__documentos__documento__enviar__texto">Selecione o arquivo que deseja enviar</p>
+                    <button class="conteudo__documentos__documento__enviar__botao">Selecionar</button>
+                </div>
+            </div>
+            <div class="conteudo__documentos__documento">
+                <p class="conteudo__documentos__documento__tipo">Comprovante de Residência</p>
+                <div class="conteudo__documentos__documento__enviar">
+                    <p class="conteudo__documentos__documento__enviar__texto">Selecione o arquivo que deseja enviar</p>
+                    <button class="conteudo__documentos__documento__enviar__botao">Selecionar</button>
+                </div>
+            </div>
+        </section>
+        <section class="conteudo__saidas">
+            <button class="conteudo__saidas__cancelar">Cancelar</button>
+            <button class="conteudo__saidas__enviar">Enviar</button>
         </section>
     </section>
 
     <img class="imagem" src="imagemtrilhas.png" alt="Logo marca do trilhas inova">
 </body>
+
 </html>
