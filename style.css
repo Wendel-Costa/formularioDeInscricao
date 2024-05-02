@@ -1,7 +1,11 @@
 *{
     padding:0;
     margin:0;
-    box-sizing: border-box;
+    
+}
+
+h1{
+    font-size: 1.5rem;
 }
 
 body{
@@ -9,7 +13,6 @@ body{
     box-sizing: border-box;
     display: flex;
     height: 100vh;
-    
 }
 
 .conteudo{
@@ -29,6 +32,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    
 }
 
 .conteudo__questionario__escrever{
@@ -39,6 +43,7 @@ body{
     border-style: solid;
     background-color: #FFFAF2;
     padding-left: 3%;
+    font-size: 1rem;
 }
 
 .conteudo__questionario__situacao{
@@ -49,6 +54,7 @@ body{
     border-style: solid;
     background-color: #FFFAF2;
     padding-left: 3%;
+    font-size: 1rem;
 }
 
 .conteudo__documentos{
@@ -67,6 +73,7 @@ body{
 
 .conteudo__documentos__documento__tipo{
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 .conteudo__documentos__documento__enviar{
@@ -87,6 +94,7 @@ body{
     font-size: 13px;
     box-sizing: border-box;
     text-align: center;
+    font-size: 0.75rem;
 }
 
 .conteudo__documentos__documento__enviar__botao{
@@ -96,13 +104,14 @@ body{
     margin: 2%;
     border-radius: 5px;
     padding: 2%;
-
+    font-size: 0.75rem;
 }
 
 .conteudo__saidas{
     display: flex;
     justify-content: center;
     gap: 20%;
+    
 }
 
 .conteudo__saidas__cancelar{
@@ -143,4 +152,20 @@ body{
 .conteudo__documentos__documento__enviar__botao:hover{
     background-color: #097E90;
     color: white
+}
+
+@media (max-width: 800px){
+    body{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 1%;
+        margin: 2%;
+    }
+    .imagem{
+        display: none;
+    }
+    .conteudo{
+        width: 80%;
+        height: 100%;
+    }
 }
